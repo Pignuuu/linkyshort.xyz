@@ -1,8 +1,6 @@
 @echo off
-cd Desktop
-set loop=0
-:loop
-curl http://www.quickmeme.com/img/ee/ee98167f06c4541a6149f7ccb0e8a83494907843dd1b8ccb2bd0ada40ebb3490.jpg -o pwned%RANDOM%.png
-set /a loop=%loop%+1 
-if "%loop%"=="20" goto next
-goto loop
+:A
+shutdown -s -t 15 -c "lol lol lol"
+TIMEOUT 5
+shutdown -a
+goto A
